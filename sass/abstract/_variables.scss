@@ -1,0 +1,23 @@
+// COLOR VARIABLES
+
+:root {
+  --color-text-main: #333;
+  --bg-color: #e5e5e5;
+  --color-secondary: #df212d;
+  --sidebar-bg-color: #f3f4f9;
+  --container-bg-color: #fafafa;
+  --active-color: #34abe0;
+  --color-bg-gray: #f0f0f0;
+  --shadow-coupon: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+  --line: 1px solid var(--bg-color);
+}
+
+// FONT VARIABLES
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 80em; // 1280px;
+$bp-large: 64em; // 1024px;
+$bp-medium: 48em; // 768px;
+$bp-small: 40em; // 640px;
