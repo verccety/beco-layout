@@ -1,0 +1,42 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+
+  &__input {
+    margin-left: -4rem;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    border-radius: 100px;
+    padding: 1rem 4.5rem;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.8rem;
+    color: inherit;
+    transition: all 0.2s;
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.45);
+    }
+
+    &:focus {
+      outline: var(--color-secondary);
+      border: 1px rgba($color: #000, $alpha: 0.7) solid;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__button {
+    z-index: 2;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}

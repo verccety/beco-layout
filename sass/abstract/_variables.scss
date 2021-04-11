@@ -1,7 +1,7 @@
 // COLOR VARIABLES
-
 :root {
-  --color-text-main: #333;
+  --color-text-main: #000;
+  --color-text-secondary: #333;
   --bg-color: #e5e5e5;
   --color-secondary: #df212d;
   --sidebar-bg-color: #f3f4f9;
@@ -21,3 +21,9 @@ $bp-largest: 80em; // 1280px;
 $bp-large: 64em; // 1024px;
 $bp-medium: 48em; // 768px;
 $bp-small: 40em; // 640px;
+
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+  }
