@@ -13,58 +13,58 @@
       <!-- SIDEBAR -->
       <nav class="sidebar">
         <div class="sidebar__container">
-        <div class="sidebar__logo">
-          <img src="assets/img/icons/logo.svg" alt="Каталог" class="sidebar__img" />
-          <a href="#" class="sidebar__logo-name">BECO</a>
+          <div class="sidebar__logo">
+            <img src="assets/img/icons/logo.svg" alt="Каталог" class="sidebar__img" />
+            <a href="#" class="sidebar__logo-name">BECO</a>
+          </div>
+
+          <ul class="side-nav">
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use href="assets/img/sprite.svg#catalog"></use>
+                </svg>
+                <span class="side-nav__category-name">Каталог</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use href="assets/img/sprite.svg#health"></use>
+                </svg>
+                <span class="side-nav__category-name">Здоровье</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use href="assets/img/sprite.svg#beauty"></use>
+                </svg>
+                <span class="side-nav__category-name">Красота</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use href="assets/img/sprite.svg#enjoy"></use>
+                </svg>
+                <span class="side-nav__category-name">Развлечения</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use href="assets/img/sprite.svg#car"></use>
+                </svg>
+                <span class="side-nav__category-name">Авто</span>
+              </a>
+            </li>
+          </ul>
         </div>
-
-        <ul class="side-nav">
-          <li class="side-nav__item">
-            <a href="#" class="side-nav__link">
-              <svg class="side-nav__icon">
-                <use href="assets/img/sprite.svg#catalog"></use>
-              </svg>
-              <span class="side-nav__category-name">Каталог</span>
-            </a>
-          </li>
-
-          <li class="side-nav__item">
-            <a href="#" class="side-nav__link">
-              <svg class="side-nav__icon">
-                <use href="assets/img/sprite.svg#health"></use>
-              </svg>
-              <span class="side-nav__category-name">Здоровье</span>
-            </a>
-          </li>
-
-          <li class="side-nav__item side-nav__item--active">
-            <a href="#" class="side-nav__link">
-              <svg class="side-nav__icon">
-                <use href="assets/img/sprite.svg#beauty"></use>
-              </svg>
-              <span class="side-nav__category-name">Красота</span>
-            </a>
-          </li>
-
-          <li class="side-nav__item">
-            <a href="#" class="side-nav__link">
-              <svg class="side-nav__icon">
-                <use href="assets/img/sprite.svg#enjoy"></use>
-              </svg>
-              <span class="side-nav__category-name">Развлечения</span>
-            </a>
-          </li>
-
-          <li class="side-nav__item">
-            <a href="#" class="side-nav__link">
-              <svg class="side-nav__icon">
-                <use href="assets/img/sprite.svg#car"></use>
-              </svg>
-              <span class="side-nav__category-name">Авто</span>
-            </a>
-          </li>
-        </ul>
-      </div>
 
         <div class="navigation">
           <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
@@ -93,8 +93,6 @@
         </form>
       </header>
 
-      
-
       <!-- MAIN CONTENT -->
       <main class="main">
         <div class="main__container">
@@ -108,7 +106,11 @@
               <span class="main__coupon-type">СКИДКА</span>
             </div>
             <div class="main__coupon-img">
-              <img src="/assets/img/cards/wine.png" alt="Фото товара" />
+              <picture>
+                <source srcset="/assets/img/cards/wine_mob.png" media="(max-width: 40em)" />
+                <source srcset="/assets/img/cards/wine.png" media="(min-width: 41em)" />
+                <img src="/assets/img/cards/wine.png" alt="Фото товара" />
+              </picture>
             </div>
           </div>
 
@@ -122,7 +124,11 @@
               <span class="main__coupon-type">ПРОМОКОД</span>
             </div>
             <div class="main__coupon-img">
-              <img src="/assets/img/cards/beer.png" alt="Фото товара" />
+              <picture>
+                <source srcset="/assets/img/cards/beer_mob.png" media="(max-width: 40em)" />
+                <source srcset="/assets/img/cards/beer.png" media="(min-width: 41em)" />
+                <img src="/assets/img/cards/beer.png" alt="Фото товара" />
+              </picture>
             </div>
           </div>
 
@@ -136,7 +142,11 @@
               <span class="main__coupon-type">СКИДКА</span>
             </div>
             <div class="main__coupon-img">
-              <img src="/assets/img/cards/cake.png" alt="Фото товара" />
+              <picture>
+                <source srcset="/assets/img/cards/cake_mob.png" media="(max-width: 40em)" />
+                <source srcset="/assets/img/cards/cake.png" media="(min-width: 41em)" />
+                <img src="/assets/img/cards/cake.png" alt="Фото товара" />
+              </picture>
             </div>
           </div>
 
@@ -150,7 +160,11 @@
               <span class="main__coupon-type">СКИДКА</span>
             </div>
             <div class="main__coupon-img">
-              <img src="/assets/img/cards/sushi.png" alt="Фото товара" />
+              <picture>
+                <source srcset="/assets/img/cards/sushi_mob.png" media="(max-width: 40em)" />
+                <source srcset="/assets/img/cards/sushi.png" media="(min-width: 41em)" />
+                <img src="/assets/img/cards/sushi.png" alt="Фото товара" />
+              </picture>
             </div>
           </div>
 
@@ -164,7 +178,11 @@
               <span class="main__coupon-type">КУПОН</span>
             </div>
             <div class="main__coupon-img">
-              <img src="/assets/img/cards/fruits.png" alt="Фото товара" />
+              <picture>
+                <source srcset="/assets/img/cards/fruits_mob.png" media="(max-width: 40em)" />
+                <source srcset="/assets/img/cards/fruits.png" media="(min-width: 41em)" />
+                <img src="/assets/img/cards/fruits.png" alt="Фото товара" />
+              </picture>
             </div>
           </div>
 
@@ -178,7 +196,11 @@
               <span class="main__coupon-type">СКИДКА</span>
             </div>
             <div class="main__coupon-img">
-              <img src="/assets/img/cards/meat.png" alt="Фото товара" />
+              <picture>
+                <source srcset="/assets/img/cards/meat_mob.png" media="(max-width: 40em)" />
+                <source srcset="/assets/img/cards/meat.png" media="(min-width: 41em)" />
+                <img src="/assets/img/cards/meat.png" alt="Фото товара" />
+              </picture>
             </div>
           </div>
 
@@ -192,7 +214,11 @@
               <span class="main__coupon-type">ПРОМОКОД</span>
             </div>
             <div class="main__coupon-img">
-              <img src="/assets/img/cards/shawarma.png" alt="Фото товара" />
+              <picture>
+                <source srcset="/assets/img/cards/shawarma_mob.png" media="(max-width: 40em)" />
+                <source srcset="/assets/img/cards/shawarma.png" media="(min-width: 41em)" />
+                <img src="/assets/img/cards/shawarma.png" alt="Фото товара" />
+              </picture>
             </div>
           </div>
 
@@ -206,7 +232,11 @@
               <span class="main__coupon-type">СКИДКА</span>
             </div>
             <div class="main__coupon-img">
-              <img src="/assets/img/cards/ice.png" alt="Фото товара" />
+              <picture>
+                <source srcset="/assets/img/cards/ice_mob.png" media="(max-width: 40em)" />
+                <source srcset="/assets/img/cards/ice.png" media="(min-width: 41em)" />
+                <img src="/assets/img/cards/ice.png" alt="Фото товара" />
+              </picture>
             </div>
           </div>
 
@@ -220,7 +250,11 @@
               <span class="main__coupon-type">КУПОН</span>
             </div>
             <div class="main__coupon-img">
-              <img src="/assets/img/cards/wine.png" alt="Фото товара" />
+              <picture>
+                <source srcset="/assets/img/cards/wine_mob.png" media="(max-width: 40em)" />
+                <source srcset="/assets/img/cards/wine.png" media="(min-width: 41em)" />
+                <img src="/assets/img/cards/wine.png" alt="Фото товара" />
+              </picture>
             </div>
           </div>
 
@@ -234,7 +268,11 @@
               <span class="main__coupon-type">ПРОМОКОД</span>
             </div>
             <div class="main__coupon-img">
-              <img src="/assets/img/cards/beer.png" alt="Фото товара" />
+              <picture>
+                <source srcset="/assets/img/cards/beer_mob.png" media="(max-width: 40em)" />
+                <source srcset="/assets/img/cards/beer.png" media="(min-width: 41em)" />
+                <img src="/assets/img/cards/beer.png" alt="Фото товара" />
+              </picture>
             </div>
           </div>
 
@@ -248,7 +286,11 @@
               <span class="main__coupon-type">СКИДКА</span>
             </div>
             <div class="main__coupon-img">
-              <img src="/assets/img/cards/cake.png" alt="Фото товара" />
+              <picture>
+                <source srcset="/assets/img/cards/cake_mob.png" media="(max-width: 40em)" />
+                <source srcset="/assets/img/cards/cake.png" media="(min-width: 41em)" />
+                <img src="/assets/img/cards/cake.png" alt="Фото товара" />
+              </picture>
             </div>
           </div>
 
@@ -262,13 +304,15 @@
               <span class="main__coupon-type">СКИДКА</span>
             </div>
             <div class="main__coupon-img">
-              <img src="/assets/img/cards/sushi.png" alt="Фото товара" />
+              <picture>
+                <source srcset="/assets/img/cards/sushi_mob.png" media="(max-width: 40em)" />
+                <source srcset="/assets/img/cards/sushi.png" media="(min-width: 41em)" />
+                <img src="/assets/img/cards/sushi.png" alt="Фото товара" />
+              </picture>
             </div>
           </div>
         </div>
       </main>
     </div>
-
-    
   </body>
 </html>
