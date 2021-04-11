@@ -68,7 +68,7 @@
     }
   }
 
-  &--active > div > a {
+  &--active  &__container &__logo &__logo-name {
     display: revert;
   }
 }

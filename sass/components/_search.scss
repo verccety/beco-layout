@@ -8,12 +8,18 @@
     margin-left: -4rem;
     border: 1px solid rgba(51, 51, 51, 0.2);
     border-radius: 100px;
-    padding: 1rem 4.5rem;
+    padding: 1rem 0 1rem 4.5rem;
     width: 100%;
     font-family: inherit;
     font-size: 1.8rem;
     color: inherit;
     transition: all 0.2s;
+    min-width: 26.7rem;
+    height: 5.2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding-left: 5rem;
+    }
 
     &::placeholder {
       color: rgba(0, 0, 0, 0.45);
@@ -38,5 +44,18 @@
   &__icon {
     width: 2rem;
     height: 2rem;
+  }
+
+  .is-visible & {
+    margin-left: 2rem;
+  }
+
+  .is-hidden &__input {
+    @media only screen and (max-width: $bp-small) {
+      min-width: 22rem;
+      padding: 0;
+      padding-left: 2rem;
+      margin-left: 0;
+    }
   }
 }

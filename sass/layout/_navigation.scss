@@ -5,7 +5,7 @@
 
   &__button {
     position: absolute;
-    left: 100%;
+    left: 99%;
     top: 0%;
     z-index: 2000;
     width: 4.8rem;
@@ -13,12 +13,13 @@
     text-align: center;
     cursor: pointer;
     user-select: none;
-    background: url(/assets/img/icons/menu.svg);
+    background: url(/assets/img/icons/menu.svg) no-repeat;
   }
 
   &__icon {
     position: relative;
     margin-top: 5.2rem;
+    transform: translateX(-3px);
 
     &,
     &::before,

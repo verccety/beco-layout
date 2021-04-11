@@ -11,11 +11,14 @@
   transition: all 0.5s;
   font-family: $font-secondary;
 
+  @media only screen and (max-width: $bp-medium) {
+    padding: 4rem 2rem;
+  }
 
   .category__name {
     opacity: 0.85;
     transition: all 0.5s;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-weight: 600;
 
     @media only screen and (max-width: $bp-medium) {
@@ -24,14 +27,18 @@
   }
 
   &.is-hidden {
-    transform: translateY(-5rem);
+    transform: translateY(-7rem);
 
     .category__name {
       opacity: 0;
     }
 
     .search {
-      margin-left: 4rem;
+      margin-left: 4.5rem;
+
+      @media only screen and (max-width: $bp-small) {
+        margin-left: 6rem;
+      }
     }
   }
 

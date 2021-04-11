@@ -31,7 +31,7 @@ let scrollPos = 0;
 const nav = document.querySelector('.header');
 const searchButton = document.querySelector('.search__button');
 const mediaQueryDesktop = window.matchMedia('(min-width: 80em)');
-const mediaQueryMobile = window.matchMedia('(max-width: 40em)');
+const mediaQueryMobile = window.matchMedia('(max-width: 540px)');
 
 function checkPosition() {
   if (mediaQueryDesktop.matches) return;
