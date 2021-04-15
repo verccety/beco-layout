@@ -22,8 +22,7 @@ $bp-large: 64em; // 1024px;
 $bp-medium: 50em; // 800px;
 $bp-small: 40em; // 640px;
 
-
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 0;
   background: transparent; /* make scrollbar transparent */
-  }
+}

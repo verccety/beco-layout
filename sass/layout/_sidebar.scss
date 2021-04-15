@@ -1,6 +1,5 @@
 .sidebar {
   grid-row: 1 / -1;
-  // padding: 4rem 0;
   font-weight: 600;
   font-family: $font-secondary;
   font-size: 1.6rem;
@@ -17,6 +16,7 @@
     margin-top: 4rem;
     margin-left: 4rem;
   }
+
   @media only screen and (max-width: $bp-medium) {
     width: 10rem;
   }
@@ -34,13 +34,6 @@
     align-items: center;
     grid-template-columns: min-content auto;
     gap: 1rem;
-
-    @media only screen and (max-width: $bp-small) {
-      // display: none;
-    }
-  }
-
-  @media only screen and (max-width: $bp-small) {
   }
 
   &__logo-name {
@@ -68,7 +61,7 @@
     }
   }
 
-  &--active  &__container &__logo &__logo-name {
+  &--active &__container &__logo &__logo-name {
     display: revert;
   }
 }
@@ -150,9 +143,5 @@
       display: grid;
       grid-template-columns: 35px min-content;
     }
-  }
-
-  @media only screen and (max-width: $bp-small) {
-    // display: none;
   }
 }
